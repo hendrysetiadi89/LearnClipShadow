@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!" />
+
+    <!--<ImageView-->
+    <!--android:layout_width="100dp"-->
+    <!--android:layout_height="100dp"-->
+    <!--android:src="@drawable/test"-->
+    <!--android:layout_gravity="center"/>-->
+
+    <!--<com.example.nakama.testshadow.ShapeOfView-->
+    <!--android:id="@+id/myShape"-->
+    <!--android:layout_width="120dp"-->
+    <!--android:layout_height="150dp"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:elevation="4dp"-->
+    <!--android:padding="4dp">-->
+
+    <!--&lt;!&ndash; YOUR CONTENT &ndash;&gt;-->
+    <!--<ImageView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:scaleType="centerCrop"-->
+    <!--android:src="@drawable/shape_of_view_ic_android_black_24dp" />-->
+
+    <!--</com.example.nakama.testshadow.ShapeOfView>-->
+
+    <com.example.nakama.testshadow.ClippedView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:clipToPadding="false"
+        android:padding="8dp">
+
+    </com.example.nakama.testshadow.ClippedView>
+</FrameLayout>
